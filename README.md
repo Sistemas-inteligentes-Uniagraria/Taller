@@ -74,7 +74,6 @@ lib_deps =
   adafruit/MAX6675 library @ ^1.1.2
   marcoschwartz/LiquidCrystal_I2C @ ^1.1.4
   adafruit/Adafruit GFX Library @ ^1.10.0
-  adafruit/MAX6675 library @ ^1.1.2
 ```
 
 ---
