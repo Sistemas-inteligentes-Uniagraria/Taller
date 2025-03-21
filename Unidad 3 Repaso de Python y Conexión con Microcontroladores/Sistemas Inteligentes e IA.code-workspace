@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"name": "TestSerialCOM",
+			"path": "../../../ESP32/TestSerialCOM"
+		}
+	],
+	"settings": {}
+}
