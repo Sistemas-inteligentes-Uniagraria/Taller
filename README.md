@@ -46,6 +46,8 @@ Esta unidad integra los siguientes puntos en un mismo código de ESP32 y en la i
 4. **Detección de interrupciones en Arduino desde Python**.
 5. **Control de velocidad de un ventilador en función de la temperatura**.
 
+<img src="Imagenes/image.png" ancho="300" />
+
 ---
 
 ### 🔹 Unidad 4: Visión Artificial con OpenCV
