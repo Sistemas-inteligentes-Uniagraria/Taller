@@ -60,16 +60,21 @@ Esta unidad integra los siguientes puntos en un mismo código de ESP32 y en la i
 
 ## ⚙️ Instalación y Requisitos
 
-Para ejecutar los scripts, asegúrate de tener instaladas las siguientes dependencias:
+Para ejecutar los scripts, asegúrate de tener instaladas las siguientes dependencias en Python:
 
 ```bash
-pip install opencv-python numpy matplotlib serial
+pip install opencv-python matplotlib pyserial pandas PySide6 json
 ```
 
-Si trabajas con Arduino, instala la biblioteca `pyserial`:
+Para trabajar con PlatformIO en ESP32, instala las siguientes bibliotecas:
 
-```bash
-pip install pyserial
+```ini
+lib_deps =
+  bblanchon/ArduinoJson @ ^7.3.1
+  adafruit/MAX6675 library @ ^1.1.2
+  marcoschwartz/LiquidCrystal_I2C @ ^1.1.4
+  adafruit/Adafruit GFX Library @ ^1.10.0
+  adafruit/MAX6675 library @ ^1.1.2
 ```
 
 ---
@@ -78,17 +83,13 @@ pip install pyserial
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/Sistemas-inteligentes-Uniagraria/Taller.git
    ```
-2. Accede al directorio del proyecto:
-   ```bash
-   cd tu_repositorio
-   ```
-3. Ejecuta los scripts según la unidad y tema que desees probar.
+2. Ejecuta los scripts según la unidad y tema que desees probar.
 
 ---
 
-## 📜 Autor
+## 🐜 Autor
 
 **Ing. Christian Alejandro Pineda Torres**\
 Departamento de Ingeniería Mecatrónica\
@@ -96,8 +97,3 @@ Fundación Universitaria Agraria de Colombia - UNIAGRARIA\
 Versión: 1 (2025)
 
 ---
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT. Puedes consultarla [aquí](LICENSE).
-
