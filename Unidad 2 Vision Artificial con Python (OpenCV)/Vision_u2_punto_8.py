@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-imagen = cv2.imread(r'C:\Users\Yesenia\Documents\poo\IA\formas2.jpeg')
+imagen = cv2.imread(r'C:\Users\dcosm\Documents\GitHub\Taller\Unidad 2 Vision Artificial con Python (OpenCV)\formas2.jpeg')
 imagen = cv2.resize(imagen, (600, 550))
 gris = cv2.cvtColor(imagen, cv2.COLOR_BGR2GRAY)
 gaus = cv2.GaussianBlur(gris, (5, 5), 0)

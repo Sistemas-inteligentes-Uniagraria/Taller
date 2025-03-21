@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-imagen1 = cv2.imread(r'C:\Users\Yesenia\Documents\poo\IA\cerebro.jpg')
+imagen1 = cv2.imread(r'C:\Users\dcosm\Documents\GitHub\Taller\Unidad 2 Vision Artificial con Python (OpenCV)\cerebro.jpg')
 imagen1 = cv2.resize(imagen1, (400,300))
 imagen = cv2.cvtColor(imagen1, cv2.COLOR_BGR2GRAY)
 _, binaria = cv2.threshold(imagen, 100, 255, cv2.THRESH_BINARY)

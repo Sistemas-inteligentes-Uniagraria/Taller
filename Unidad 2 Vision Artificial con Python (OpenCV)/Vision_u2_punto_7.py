@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-imagen_o = cv2.imread(r'C:\Users\Yesenia\Documents\poo\IA\lady2.jpg')
+imagen_o = cv2.imread(r'C:\Users\dcosm\Documents\GitHub\Taller\Unidad 2 Vision Artificial con Python (OpenCV)\lady2.jpg')
 imagen_o = cv2.resize(imagen_o, (600,450))
 imagen = cv2.cvtColor(imagen_o, cv2.COLOR_BGR2GRAY)
 desenfoque = cv2.GaussianBlur(imagen, (3,3),0)

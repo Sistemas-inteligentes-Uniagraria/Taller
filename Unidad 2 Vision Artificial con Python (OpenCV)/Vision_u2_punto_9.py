@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-imagen = cv2.imread(r'C:\Users\Yesenia\Documents\poo\IA\camion.jpg')
+imagen = cv2.imread(r"C:\Users\dcosm\Documents\GitHub\Taller\Unidad 2 Vision Artificial con Python (OpenCV)\camion.jpg")
 imagen = cv2.resize(imagen, (600, 550))
 gris = cv2.cvtColor(imagen, cv2.COLOR_BGR2GRAY)
 gaus = cv2.GaussianBlur(gris, (5, 5), 0)
@@ -18,13 +18,13 @@ for contorno in contornos:
         aproximacion = cv2.approxPolyDP(contorno, epsilon, True)
 
         if len(aproximacion) == 3:
-            forma = "Triángulo"
+            forma = "Triangulo"
         elif len(aproximacion) == 4:
             (x, y, w, h) = cv2.boundingRect(contorno)
             aspecto = w / float(h)
-            forma = "Cuadrado" if 0.9 < aspecto < 1.1 else "Rectángulo"
+            forma = "Cuadrado" if 0.9 < aspecto < 1.1 else "Rectangulo"
         elif len(aproximacion) > 6:
-            forma = "Círculo"
+            forma = "Circulo"
         else:
             forma = "Desconocido"
 
@@ -36,6 +36,6 @@ for contorno in contornos:
             cv2.putText(imagen, forma, (cx - 40, cy), cv2.FONT_HERSHEY_SIMPLEX, 
                         0.7, (0, 0, 255), 2)
 
-cv2.imshow("Detección de objetos", imagen)
+cv2.imshow("Deteccion de objetos", imagen)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

@@ -1,7 +1,11 @@
 import cv2
+import os
+
+ruta_script = os.path.dirname(os.path.abspath(__file__))
+ruta_imagen = os.path.join(ruta_script, "rostros.jpg")
 
 detector = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-imagen = cv2.imread(r'C:\Users\Yesenia\Documents\poo\IA\rostros.jpg')
+imagen = cv2.imread(ruta_imagen)
 grises = cv2.cvtColor(imagen, cv2.COLOR_BGR2GRAY)
 rostros_d = detector.detectMultiScale(grises, scaleFactor=1.1, minNeighbors=5, minSize=(30,30))
 

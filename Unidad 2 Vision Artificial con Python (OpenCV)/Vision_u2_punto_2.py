@@ -21,7 +21,7 @@ if pregunta == 1:
         if cv2.waitKey(1)& 0xFF == ord('j'):
             break
 elif pregunta == 2:
-    imagen = cv2.imread(r'C:\Users\Yesenia\Documents\poo\IA\bosque.jpg')
+    imagen = cv2.imread(r'C:\Users\dcosm\Documents\GitHub\Taller\Unidad 2 Vision Artificial con Python (OpenCV)\bosque.jpg')
     imagen = cv2.resize(imagen, (700, 550))
     mascara_1 = cv2.inRange(imagen, bajo_verde, alto_verde)
     imagen = cv2.bitwise_or(imagen, imagen, mask=mascara_1)
