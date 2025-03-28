@@ -90,11 +90,14 @@ lib_deps =
 
 ---
 
-## 🐜 Autor
+## 🐜 Autores
 
-**Ing. Christian Alejandro Pineda Torres**\
-Departamento de Ingeniería Mecatrónica\
+**Daniel Felipe Cosme Diaz**\
+**Carol Dayana Zamora**\
+**Yesenia Romero**\
+**Jhoan Castañeda**\
+
 Fundación Universitaria Agraria de Colombia - UNIAGRARIA\
-Versión: 1 (2025)
+2025
 
 ---
